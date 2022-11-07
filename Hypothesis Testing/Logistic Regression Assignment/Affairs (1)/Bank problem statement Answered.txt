@@ -1,0 +1,21 @@
+Output variable -> y
+y -> Whether the client has subscribed a term deposit or not 
+Binomial ("yes" or "no")
+
+Observation--> y
+not subscribed > subscribed
+
+Answer: 
+cnf_test_matrix
+array([[11706,   275],
+       [ 1147,   436]], dtype=int64)
+
+accuracy score test data
+0.8951636685343557
+
+cnf_train_matrix
+array([[27307,   634],
+       [ 2622,  1084]], dtype=int64)
+
+accuracy score train data
+0.897115050399722

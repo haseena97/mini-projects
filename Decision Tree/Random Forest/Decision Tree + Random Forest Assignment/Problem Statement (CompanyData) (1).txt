@@ -1,0 +1,27 @@
+Problem Statement:
+A cloth manufacturing company is interested to know about the segment or attributes contributing to high sale.
+
+Approach - A decision tree can be built with target variable 'Sale' (we will first convert it into categorical variable)
+ & all other variables will be independent in the analysis.
+
+Answer:
+Convert 'Sale' into categorical variable by binning [-1,5,10,15,20] -->['very low' < ' low' < 'medium' < 'high']
+
+Test data :
+Predictions   low  medium  very low
+Actual                             
+very low       17       0        14
+ low           47      11        10
+medium          5      16         0
+
+Accuracy:0.64166666666666
+
+Train data:
+Predictions   low  high  medium  very low
+Actual                                   
+very low        0     0       0        46
+ low          177     0       0         0
+medium          0     0      55         0
+high            0     2       0         0
+
+Accuracy:1.0

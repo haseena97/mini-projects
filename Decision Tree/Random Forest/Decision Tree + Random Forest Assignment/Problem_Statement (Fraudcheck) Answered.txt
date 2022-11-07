@@ -1,0 +1,27 @@
+Problem Statement: 
+Use Decision Trees to prepare a model on fraud data, treating those who have 
+taxable_income <= 30000 as "Risky" and others are "Good"
+
+Answer:
+Predictor:
+2 categories:
+Risky :taxable_income <= 30000
+Good : taxable_income > 30000
+
+Test data:
+Predictions   good  risky
+Actual                   
+risky           28      8
+ good          106     38
+
+Test data accuracy:
+0.6333333333333333
+
+Train data:
+Predictions   good  risky
+Actual                   
+risky            0     88
+ good          332      0
+
+Train data accuracy:
+1.0
